@@ -10,10 +10,14 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var backgroundView: NSImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        backgroundView.image = NSImage().randomBackgroundImage()
     }
 
     override var representedObject: Any? {
@@ -24,4 +28,6 @@ class ViewController: NSViewController {
 
 
 }
+
+
 

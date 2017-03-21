@@ -11,15 +11,21 @@
 		471E84E41E7B27C2004C1CDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E84E31E7B27C2004C1CDC /* ViewController.swift */; };
 		471E84E61E7B27C2004C1CDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471E84E51E7B27C2004C1CDC /* Assets.xcassets */; };
 		471E84E91E7B27C2004C1CDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471E84E71E7B27C2004C1CDC /* Main.storyboard */; };
+		473CEF301E80D4D00067E51F /* Acme.png in Resources */ = {isa = PBXBuildFile; fileRef = 473CEF2F1E80D4D00067E51F /* Acme.png */; };
+		473CEF361E80EBBE0067E51F /* NSImage Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CEF351E80EBBE0067E51F /* NSImage Extension.swift */; };
+		473CEF381E80EC540067E51F /* TextToBarcodeValueTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CEF371E80EC540067E51F /* TextToBarcodeValueTransformer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		471E84DE1E7B27C2004C1CDC /* TMP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		471E84DE1E7B27C2004C1CDC /* Tagit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tagit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		471E84E11E7B27C2004C1CDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		471E84E31E7B27C2004C1CDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		471E84E51E7B27C2004C1CDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		471E84E81E7B27C2004C1CDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		471E84EA1E7B27C2004C1CDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		473CEF2F1E80D4D00067E51F /* Acme.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Acme.png; sourceTree = "<group>"; };
+		473CEF351E80EBBE0067E51F /* NSImage Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSImage Extension.swift"; path = "Extensions/NSImage Extension.swift"; sourceTree = "<group>"; };
+		473CEF371E80EC540067E51F /* TextToBarcodeValueTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToBarcodeValueTransformer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +42,7 @@
 		471E84D51E7B27C2004C1CDC = {
 			isa = PBXGroup;
 			children = (
-				471E84E01E7B27C2004C1CDC /* TMP */,
+				471E84E01E7B27C2004C1CDC /* Tagit */,
 				471E84DF1E7B27C2004C1CDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,29 +50,32 @@
 		471E84DF1E7B27C2004C1CDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				471E84DE1E7B27C2004C1CDC /* TMP.app */,
+				471E84DE1E7B27C2004C1CDC /* Tagit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		471E84E01E7B27C2004C1CDC /* TMP */ = {
+		471E84E01E7B27C2004C1CDC /* Tagit */ = {
 			isa = PBXGroup;
 			children = (
+				473CEF371E80EC540067E51F /* TextToBarcodeValueTransformer.swift */,
 				471E84E11E7B27C2004C1CDC /* AppDelegate.swift */,
 				471E84E31E7B27C2004C1CDC /* ViewController.swift */,
 				471E84E51E7B27C2004C1CDC /* Assets.xcassets */,
 				471E84E71E7B27C2004C1CDC /* Main.storyboard */,
 				471E84EA1E7B27C2004C1CDC /* Info.plist */,
+				473CEF2F1E80D4D00067E51F /* Acme.png */,
+				473CEF351E80EBBE0067E51F /* NSImage Extension.swift */,
 			);
-			path = TMP;
+			path = Tagit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		471E84DD1E7B27C2004C1CDC /* TMP */ = {
+		471E84DD1E7B27C2004C1CDC /* Tagit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 471E84ED1E7B27C2004C1CDC /* Build configuration list for PBXNativeTarget "TMP" */;
+			buildConfigurationList = 471E84ED1E7B27C2004C1CDC /* Build configuration list for PBXNativeTarget "Tagit" */;
 			buildPhases = (
 				471E84DA1E7B27C2004C1CDC /* Sources */,
 				471E84DB1E7B27C2004C1CDC /* Frameworks */,
@@ -76,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = TMP;
+			name = Tagit;
 			productName = TMP;
-			productReference = 471E84DE1E7B27C2004C1CDC /* TMP.app */;
+			productReference = 471E84DE1E7B27C2004C1CDC /* Tagit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 471E84D91E7B27C2004C1CDC /* Build configuration list for PBXProject "TMP" */;
+			buildConfigurationList = 471E84D91E7B27C2004C1CDC /* Build configuration list for PBXProject "Tagit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				471E84DD1E7B27C2004C1CDC /* TMP */,
+				471E84DD1E7B27C2004C1CDC /* Tagit */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				471E84E61E7B27C2004C1CDC /* Assets.xcassets in Resources */,
+				473CEF301E80D4D00067E51F /* Acme.png in Resources */,
 				471E84E91E7B27C2004C1CDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +145,8 @@
 			files = (
 				471E84E41E7B27C2004C1CDC /* ViewController.swift in Sources */,
 				471E84E21E7B27C2004C1CDC /* AppDelegate.swift in Sources */,
+				473CEF381E80EC540067E51F /* TextToBarcodeValueTransformer.swift in Sources */,
+				473CEF361E80EBBE0067E51F /* NSImage Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,11 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = EM3ER8T33A;
-				INFOPLIST_FILE = TMP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tagit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.fti.TMP;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.fti.Tagit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -260,11 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = EM3ER8T33A;
-				INFOPLIST_FILE = TMP/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Tagit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.fti.TMP;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = io.fti.Tagit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -273,7 +289,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		471E84D91E7B27C2004C1CDC /* Build configuration list for PBXProject "TMP" */ = {
+		471E84D91E7B27C2004C1CDC /* Build configuration list for PBXProject "Tagit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				471E84EB1E7B27C2004C1CDC /* Debug */,
@@ -282,13 +298,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		471E84ED1E7B27C2004C1CDC /* Build configuration list for PBXNativeTarget "TMP" */ = {
+		471E84ED1E7B27C2004C1CDC /* Build configuration list for PBXNativeTarget "Tagit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				471E84EE1E7B27C2004C1CDC /* Debug */,
 				471E84EF1E7B27C2004C1CDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,4 +12,6 @@ You can retrieve the asset tag with:
 Or set it via: 
 `defaults write io.fti.Tagit assetTag hello`
 
-PR are most welcomed! 
+Every time you launch the application, a different background is drawn from /Library/Desktop Pictures/
+
+PR are most welcomed! Please mention me, extra publicity never hurts :-)
